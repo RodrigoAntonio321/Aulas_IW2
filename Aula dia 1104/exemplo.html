@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Somando Valores</h1>
+
+<input type="number" name="n1" id="n1"> +
+<input type="number" name="n2" id="n2">
+<input type="button" valeu="somar" onclick="somar()">
+<input type="button" valeu="sub" onclick="sub()">
+<input type="button" valeu="mul" onclick="mul()">
+<input type="button" valeu="divi" onclick="divi()">
+<div id="resultado"> Resultado </div>
+
+<script>
+    
+var n1 = document.getElementById('n1')
+var n2 = document.getElementById('n2')
+var re = document.getElementById('resultado')
+
+
+function somar() {
+var num1 = Number(n1.value)
+var num2 = Number(n2.value)
+
+var soma = num1 + num2
+
+re.innerText = `A soma de ${num1} + ${num2} é ${soma}` 
+
+}
+
+
+
+function sub() {
+    var num1 = Number(n1.value)
+var num2 = Number(n2.value)
+var sub = num1 - num2
+
+re.innerText = `A subtração de ${num1} - ${num2} é ${sub}` 
+
+}
+
+function mul() {
+    var num1 = Number(n1.value)
+var num2 = Number(n2.value)
+
+var mul = num1 * num2
+
+re.innerText = `A multiplicação de ${num1} * ${num2} é ${mul}` 
+
+}
+
+function divi() {
+    var num1 = Number(n1.value)
+var num2 = Number(n2.value)
+
+var divi = num1 / num2
+
+re.innerText = `A divisão de ${num1} / ${num2} é ${divi}` 
+
+}
+
+
+</script>
+
+
+
+
+</body>
+</html>
