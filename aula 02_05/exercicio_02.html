@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Curso JavaScript Progressivo</title>
+   Seu salario:<input id="salary" type="number"><br />
+   <button onclick="checar()">Checar</button>
+
+   <script type="text/javascript">
+    function checar(){
+
+     var sala = parseFloat(document.getElementById("salary").value);
+     
+
+     if (sala<=280){
+         var aum = sala/5 
+         var nsala = sala + aum
+         alert(`Seu salario agora : ${nsala}, foi aumentado em 20%, o aumento foi ${aum} e o salario antigo era ${sala}`)
+     }
+   if ((sala > 280) && (sala <= 700)) {
+         var aum = sala/10 + sala/20
+         var nsala = sala + aum
+         alert(`Seu salario agora : ${nsala}, foi aumentado em 15%, o aumento foi ${aum} e o salario antigo era ${sala}`)
+
+   }
+   if((sala > 700) && (sala <= 1500)) {
+    var aum = sala/10 
+         var nsala = sala + aum
+         alert(`Seu salario agora : ${nsala}, foi aumentado em 10%, o aumento foi ${aum} e o salario antigo era ${sala}`)
+   }
+  if (sala > 1500){
+         var aum = sala/20
+         var nsala = sala + aum
+         alert(`Seu salario agora : ${nsala}, foi aumentado em 5%, o aumento foi ${aum} e o salario antigo era ${sala}`)
+   }
+}
+
+
+   
+   
+
+   
+       
+   
+
+    
+ </script>
+
+ </head>
+</html>

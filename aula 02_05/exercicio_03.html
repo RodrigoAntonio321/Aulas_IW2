@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Curso JavaScript Progressivo</title>
+   Sua primeira nota:<input id="nota1" type="number">
+   Sua segunda nota :<input id="nota2" type="number"><br />
+   <button onclick="checar()">Checar</button>
+
+   <script type="text/javascript">
+    function checar(){
+
+     var nota1 = parseFloat(document.getElementById("nota1").value);
+     var nota2 = parseFloat(document.getElementById("nota2").value);
+     var media = (nota1 + nota2)/2
+     
+
+     if ((media => 9) && (media <= 10)){
+         alert(`Seu conceito foi A, você foi Aprovado, sua media foi ${media}`)
+     }
+     if ((media => 7.5) && (media < 9)){
+         alert(`Seu conceito foi B, você foi Aprovado, sua media foi ${media}`)
+   }
+   if ((media => 6) && (media < 7.5)){
+         alert(`Seu conceito foi C, você foi Aprovado, sua media foi ${media}`)
+   }
+   if ((media => 4) && (media < 6)){
+         alert(`Seu conceito foi D, você foi Reprovado, sua media foi ${media}`)
+   }
+   if (media < 4){
+         alert(`Seu conceito foi E, você foi Reprovado, sua media foi ${media}`)
+   }
+}
+
+
+   
+   
+
+   
+       
+   
+
+    
+ </script>
+
+ </head>
+</html>

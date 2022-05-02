@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Letra</title>
+   DIgite uma letra<br />
+    <input type="text" name="txtVel" id="txtVel"> <br />
+   <button onclick="verificar()">Verificar</button>
+
+   <script type="text/javascript">
+    function verificar(){
+     var op = (document.getElementById("txtVel"));
+     var up = op.toLowerCase
+
+     if( (up == 'a') || (up  == 'e') || (up  == 'i') || (up  == 'o') || (up  == 'u') )
+          alert("Sua letra é uma vocal");
+     else     
+          alert("Sua letra é consoante");
+    }
+   </script>
+
+ </head>
+</html>
