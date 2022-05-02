@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifica nação</title>
+</head>
+<body>
+    <input type="text" name="nac" id="nac">
+    <input type="button" value="VERIFICAR" onclick="verificar()">
+    <p id="sigla"></p>
+    <script>
+        function verificar(){
+            var txtPais = document.querySelector('input#nac')
+            var para = document.querySelector('p#sigla')
+            var nac = (txtPais.value)
+            var nac = nac.toUpperCase()
+            para.innerHTML = `<p>Sua nacionalidade é <strong>${nac}</strong></p>`
+            if(nac == 'BRA'){
+                para.innerHTML +=`<p>Você é Brasileiro!</p>`
+            }
+            else{
+                para.innerHTML +=`<p>Você é Estrangeiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>
