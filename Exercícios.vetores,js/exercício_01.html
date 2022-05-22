@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01 - Ordenar em ordem crescente os valores dados pelo usuário</title>
+</head>
+<body>
+    
+<script>
+    
+var qnte = Number(prompt('Quantos números você quer guardar?'))
+let vet = []
+
+function compa(x, y){
+    if (x < y){
+        return -1;
+    }
+    if (x > y){
+        return 1;
+    }
+    else{
+        return 0;
+}
+}
+
+for(var d = 0; d < qnte; d++){
+    var vale = Number(prompt(`Digite o ${d+1}º número`))
+    vet.push(vale)
+    vet.sort(function(x, y) {
+        return x - y
+    });
+}
+
+document.write(vet)
+
+
+
+
+
+</script>
+
+</body>
+</html>
