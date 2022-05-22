@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01 de Vetores</title>
+</head>
+<body>
+    <script>
+        var num = [62,15,21]
+        console.log(typeof(num))
+        console.log(num[0])
+        console.log(num)
+       //adiciona um novo valor no FINAL do vetor, como ali tinha 3 valores, adiciona um quarto no final com o valor escolhido
+        num.push(12)
+       //Saber o tamanho do vetor
+        console.log(num.length)
+
+        //mostrar no laço de repetição, primeiro saber o tamanho do vetor
+
+        var tam = num.length
+
+        for(x = 0; x <= tam - 1; x++){
+            document.write(`${num[x]} <br>`)
+        }
+
+        document.write("<br>")
+
+        //mostrando de outra forma
+        for(var x in num){
+            document.write(`${num[x]} <br>`)
+        }
+
+        document.write("<br>")
+
+        //procurando a posição do vetor de acordo com o valor
+        document.write(num.indexOf(21))
+
+
+    </script>
+</body>
+</html>
